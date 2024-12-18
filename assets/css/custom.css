@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'EnglishFont';
+    src: url('/fonts/OpenSans-Light.ttf'); /* Replace with your English font file */
+}
+
+@font-face {
+    font-family: 'ChineseFont';
+    src: url('/fonts/NotoSansSC-Light.ttf'); /* Replace with your Chinese font file */
+}
+
+html {
+    font-family: 'EnglishFont', 'ChineseFont', sans-serif; /* Fallback to Chinese font */
+}
+
+.nested-menu {
+  display: none !important;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on HoNK HOnK</title>
+    <link>http://localhost:1313/en/series/</link>
+    <description>Recent content in Series on HoNK HOnK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>mkuang.chi@gmail.com (Ming-Kuang Chi)</managingEditor>
+    <webMaster>mkuang.chi@gmail.com (Ming-Kuang Chi)</webMaster>
+    <copyright>© 2024 Ming-Kuang Chi</copyright>
+    <lastBuildDate>Tue, 28 May 2024 11:47:35 -0600</lastBuildDate><atom:link href="http://localhost:1313/en/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Coding Essentials for My Successor</title>
+      <link>http://localhost:1313/en/series/coding-essentials-for-my-successor/</link>
+      <pubDate>Tue, 28 May 2024 11:47:35 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (Ming-Kuang Chi)</author>
+      <guid>http://localhost:1313/en/series/coding-essentials-for-my-successor/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

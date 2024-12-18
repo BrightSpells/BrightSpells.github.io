@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on HoNK HOnK</title>
+    <link>http://localhost:1313/en/tags/tutorial/</link>
+    <description>Recent content in Tutorial on HoNK HOnK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>mkuang.chi@gmail.com (Ming-Kuang Chi)</managingEditor>
+    <webMaster>mkuang.chi@gmail.com (Ming-Kuang Chi)</webMaster>
+    <copyright>© 2024 Ming-Kuang Chi</copyright>
+    <lastBuildDate>Tue, 28 May 2024 11:47:35 -0600</lastBuildDate><atom:link href="http://localhost:1313/en/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Preface</title>
+      <link>http://localhost:1313/en/posts/predoc_transition/tutorial_preface_2024-05-28/</link>
+      <pubDate>Tue, 28 May 2024 11:47:35 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (Ming-Kuang Chi)</author>
+      <guid>http://localhost:1313/en/posts/predoc_transition/tutorial_preface_2024-05-28/</guid>
+      <description>The start of a series of posts about the technical things I learned during the predoc period.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/predoc_transition/tutorial_preface_2024-05-28/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
