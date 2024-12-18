@@ -415,4 +415,4 @@ Hirshhorn 外面的雕塑花园还在装修——据之前在 DC 上班的一位
 
 {{< alert >}}本文所有人名均为化名，化得本人都很意外的那种。{{< /alert >}}
 
-> 另：可能是 shortcode 设置的问题，gallery 里的图点出来只有高糊大图，待我研究明白之前欢迎大家去 repo 里看高清大图！
+> 另：可能是 shortcode 设置的问题，gallery 里的图点出来只有高糊大图，待我研究明白之前欢迎大家去 [repo](https://github.com/BrightSpells/BrightSpells.github.io/tree/main/content/zh-cn/posts/travel_dc_2024-11-26/images) 里看高清大图！
