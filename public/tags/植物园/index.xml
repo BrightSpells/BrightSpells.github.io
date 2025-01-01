@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>植物园 on HoNK HOnK</title>
+    <link>http://localhost:1313/tags/%E6%A4%8D%E7%89%A9%E5%9B%AD/</link>
+    <description>Recent content in 植物园 on HoNK HOnK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>mkuang.chi@gmail.com (纪明光)</managingEditor>
+    <webMaster>mkuang.chi@gmail.com (纪明光)</webMaster>
+    <copyright>© 2025 纪明光</copyright>
+    <lastBuildDate>Wed, 01 Jan 2025 16:40:00 -0600</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%A4%8D%E7%89%A9%E5%9B%AD/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Phoenix 游记</title>
+      <link>http://localhost:1313/posts/travel_phoenix_2024-12-25/</link>
+      <pubDate>Wed, 01 Jan 2025 16:40:00 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/posts/travel_phoenix_2024-12-25/</guid>
+      <description>好大的大峡谷，好高的仙人掌。冬天去还是好玩的！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/travel_phoenix_2024-12-25/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>DC 游记 2</title>
+      <link>http://localhost:1313/posts/travel_dc_2024-11-26/</link>
+      <pubDate>Tue, 17 Dec 2024 21:53:32 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/posts/travel_dc_2024-11-26/</guid>
+      <description>很长很啰嗦很多图的第二次去DC玩流水账，DC真好玩！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/travel_dc_2024-11-26/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
