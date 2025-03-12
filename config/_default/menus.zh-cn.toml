@@ -53,9 +53,20 @@
   weight = 60
 
 [[main]]
+  name = "Friends"
+  pageRef = "friends"
+  weight = 80
+
+[[main]]
   name = "Eng"
   url = "/en/"
-  weight = 80
+  weight = 100
+
+[[main]]
+  identifier = "rss-square"
+  pre = "rss-square"
+  url = "https://brightspells.github.io/index.xml"
+  weight = 120
 
 
 # -- Footer Menu --

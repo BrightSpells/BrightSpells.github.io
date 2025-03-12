@@ -8,7 +8,7 @@
     <language>zh-cn</language>
     <managingEditor>mkuang.chi@gmail.com (纪明光)</managingEditor>
     <webMaster>mkuang.chi@gmail.com (纪明光)</webMaster>
-    <copyright>© 2025 纪明光</copyright>
+    <copyright>&amp;copy; 2025 纪明光 CC BY-NC-SA 4.0</copyright>
     <lastBuildDate>Wed, 01 Jan 2025 16:40:00 -0600</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -38,6 +38,26 @@
       <author>mkuang.chi@gmail.com (纪明光)</author>
       <guid>http://localhost:1313/posts/first_post_2024-01-31/</guid>
       <description>第好几次搭博客之后终于要开始认真整了！</description>
+      
+    </item>
+    
+    <item>
+      <title>Friends</title>
+      <link>http://localhost:1313/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/friends/</guid>
+      <description>&lt;a target=&#34;_blank&#34; href=&#34;https://notes.midofnowhere.link/&#34; title=&#34;Mid of Nowhere&#34; class=&#34;friendurl&#34;&gt;
+  &lt;div class=&#34;frienddiv&#34;&gt;
+    &lt;div class=&#34;frienddivleft&#34;&gt;
+      &lt;img class=&#34;myfriend&#34; src=&#34;https://blog-photos.s3.fr-par.scw.cloud/2025/02/8bcf82d8f950ce8798a3f119f063815a.webp&#34; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;frienddivright&#34;&gt;
+      Mid of Nowhere&lt;br /&gt;
+      &lt;span class=&#34;friendword&#34;&gt;Welcome to the middle of nowhere. That&amp;#39;s right, absolute nowhere.&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</description>
       
     </item>
     

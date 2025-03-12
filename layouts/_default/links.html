@@ -1,0 +1,76 @@
+{{ define "main" }} {{ .Scratch.Set "scope" "single" }}
+
+<article>
+  <!-- Header with static title "Friends" -->
+  <header id="single_header" class="mt-5 max-w-prose">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Friends
+    </h1>
+  </header>
+
+  <!-- Updated Friends Style -->
+  <style type="text/css">
+    /* Use CSS Grid for overall layout */
+    .myfriends {
+      background-color: #fff;
+      opacity: 0.9;
+      display: grid;
+      grid-template-columns: 1fr; /* one column on small screens */
+      gap: 10px;
+    }
+    @media screen and (min-width: 1024px) {
+      .myfriends {
+        grid-template-columns: 1fr 1fr; /* two columns on large screens */
+      }
+    }
+    /* Link styling */
+    .friendurl {
+      text-decoration: none !important;
+      color: black;
+    }
+    /* Friend image styling */
+    .myfriend {
+      width: 56px !important;
+      height: 56px !important;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      padding: 2px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+    }
+    /* Friend item container using flex */
+    .frienddiv {
+      display: flex;
+      flex-wrap: nowrap; /* prevent image/text from stacking */
+      align-items: center;
+      /* Let the height adjust based on text wrapping */
+      padding: 5px 0;
+    }
+    .frienddivleft {
+      width: 92px;
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+    .frienddivright {
+      flex-grow: 1;
+      white-space: normal; /* allow wrapping */
+      overflow-wrap: break-word; /* break long words if needed */
+    }
+    /* Smaller font for the "word" text */
+    .friendword {
+      font-size: 0.8em;
+    }
+    /* Optional hover effect */
+    .frienddiv:hover {
+      background: rgba(87, 142, 224, 0.15);
+    }
+    .frienddiv:hover .frienddivleft img {
+      transition: 0.9s !important;
+      transform: rotate(360deg) !important;
+    }
+  </style>
+
+  <!-- Content area: Place your friends links here -->
+  <div class="myfriends">{{ .Content }}</div>
+</article>
+{{ end }}

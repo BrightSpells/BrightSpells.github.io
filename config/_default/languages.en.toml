@@ -12,8 +12,8 @@ contentDir = 'content/en'
   dateFormat = "January 2, 2006"
   logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "Wild Goose Honks"
-  # copyright = "Copy, _right?_ :thinking_face:"
+  description = "HoNK HOnK"
+  copyright = "&copy; 2025 Ming-Kuang Chi. CC BY-NC-SA 4.0"
 
 [params.author]
   name = "Ming-Kuang Chi"
