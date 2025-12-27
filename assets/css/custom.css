@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'EnglishFont';
+    src: url('/fonts/SourceSerif4-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'ChineseFont';
+    src: url('/fonts/SourceHanSerifSC-Medium.otf');
+}
+
+html {
+    font-family: 'EnglishFont', 'ChineseFont', sans-serif;
+}
+
+.nested-menu {
+  display: none !important;
+}
+
+.katex { font-size: 1.05em !important; } 

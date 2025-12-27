@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vegas on HoNK HOnK</title>
+    <link>http://localhost:1313/tags/vegas/</link>
+    <description>Recent content in Vegas on HoNK HOnK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>mkuang.chi@gmail.com (纪明光)</managingEditor>
+    <webMaster>mkuang.chi@gmail.com (纪明光)</webMaster>
+    <copyright>&amp;copy; 2025 纪明光 CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Mon, 03 Nov 2025 21:53:32 -0600</lastBuildDate><atom:link href="http://localhost:1313/tags/vegas/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vegas 游记</title>
+      <link>http://localhost:1313/posts/travel_vegas_2025-11-30/</link>
+      <pubDate>Mon, 03 Nov 2025 21:53:32 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/posts/travel_vegas_2025-11-30/</guid>
+      <description>人生第一次road trip！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/travel_vegas_2025-11-30/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

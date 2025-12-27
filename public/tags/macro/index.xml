@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macro on HoNK HOnK</title>
+    <link>http://localhost:1313/tags/macro/</link>
+    <description>Recent content in Macro on HoNK HOnK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>mkuang.chi@gmail.com (纪明光)</managingEditor>
+    <webMaster>mkuang.chi@gmail.com (纪明光)</webMaster>
+    <copyright>&amp;copy; 2025 纪明光 CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Tue, 04 Nov 2025 16:35:35 -0600</lastBuildDate><atom:link href="http://localhost:1313/tags/macro/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>推导 Baxter and King (1993) 中 Equation (14) - (18)</title>
+      <link>http://localhost:1313/posts/baxterking1993_2025-11-05/</link>
+      <pubDate>Tue, 04 Nov 2025 16:35:35 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/posts/baxterking1993_2025-11-05/</guid>
+      <description>在 GPT 老师的帮助下好不容易推明白了，要在一不小心把草纸扔了之前给记下来！</description>
+      
+    </item>
+    
+  </channel>
+</rss>

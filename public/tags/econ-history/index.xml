@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Econ History on HoNK HOnK</title>
+    <link>http://localhost:1313/tags/econ-history/</link>
+    <description>Recent content in Econ History on HoNK HOnK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>mkuang.chi@gmail.com (纪明光)</managingEditor>
+    <webMaster>mkuang.chi@gmail.com (纪明光)</webMaster>
+    <copyright>&amp;copy; 2025 纪明光 CC BY-NC-SA 4.0</copyright>
+    <lastBuildDate>Wed, 09 Jul 2025 10:53:32 -0600</lastBuildDate><atom:link href="http://localhost:1313/tags/econ-history/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[SI 2025] DAE Day 3</title>
+      <link>http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history3_2025-07/</link>
+      <pubDate>Wed, 09 Jul 2025 10:53:32 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history3_2025-07/</guid>
+      <description>Econ History 第三天，大部分内容都与女性的就业和福利相关。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history3_2025-07/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>[SI 2025] DAE Day 2</title>
+      <link>http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history2_2025-07/</link>
+      <pubDate>Tue, 08 Jul 2025 21:53:32 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history2_2025-07/</guid>
+      <description>Econ History 第二天，上午都是英国，下午是关于种族和政治。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history2_2025-07/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>[SI 2025] DAE Day 1</title>
+      <link>http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history1_2025-07/</link>
+      <pubDate>Sun, 06 Jul 2025 21:53:32 -0600</pubDate>
+      <author>mkuang.chi@gmail.com (纪明光)</author>
+      <guid>http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history1_2025-07/</guid>
+      <description>Econ History 第一天，上午比较PE，下午十分金融。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/nbersi_25_2025-07/nbersi_25_history1_2025-07/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

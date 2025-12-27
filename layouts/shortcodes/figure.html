@@ -1,0 +1,85 @@
+{{- $disableImageOptimization := .Site.Params.disableImageOptimization | default false -}}
+
+{{- if .Get "default" -}}
+  {{- partial "hugo-embedded/shortcodes/figure-default.html" . -}}
+{{- else -}}
+  {{- $url := urls.Parse (.Get "src") -}}
+  {{- $altText := .Get "alt" -}}
+  {{- $caption := .Get "caption" -}}
+  {{- $href := .Get "href" -}}
+  {{- $class := .Get "class" -}}
+  {{- $target := .Get "target" | default "_blank" -}}
+  {{- $width := .Get "width" | default "" -}}
+  {{- $height := .Get "height" | default "" -}}
+  {{- $nozoom := .Get "nozoom" | default false -}}
+
+  {{- /* Build width/height attributes (supports "auto") */ -}}
+  {{- $wAttr := "" -}}
+  {{- if eq $width "auto" -}}
+    {{- $wAttr = `style="width: auto;"` -}}
+  {{- else if $width -}}
+    {{- $wAttr = printf `width="%s"` $width -}}
+  {{- end -}}
+
+  {{- $hAttr := "" -}}
+  {{- if eq $height "auto" -}}
+    {{- $hAttr = `style="height: auto;"` -}}
+  {{- else if $height -}}
+    {{- $hAttr = printf `height="%s"` $height -}}
+  {{- end -}}
+
+  <figure{{ with $class }} class="{{ . }}"{{ end }}>
+    {{- with $href -}}<a href="{{ . }}"{{ with $target }} target="{{ . }}"{{ end }} class="inline-block">{{- end -}}
+
+    {{- if findRE "^https?" $url.Scheme -}}
+      <img
+        class="my-0 rounded-md{{ if $nozoom }} nozoom{{ end }}"
+        src="{{ $url.String }}"
+        alt="{{ $altText }}"
+        {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+        {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+      />
+    {{- else -}}
+      {{- $resource := "" -}}
+      {{- with $.Page.Resources.GetMatch ($url.String) -}}
+        {{- $resource = . -}}
+      {{- else -}}
+        {{- with resources.Get ($url.String) -}}
+          {{- $resource = . -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- with $resource -}}
+        {{- if or $disableImageOptimization (eq .MediaType.SubType "svg") -}}
+          <img
+            class="my-0 rounded-md{{ if $nozoom }} nozoom{{ end }}"
+            src="{{ .RelPermalink }}"
+            alt="{{ $altText }}"
+            {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+            {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+          />
+        {{- else -}}
+          <img
+            class="my-0 rounded-md{{ if $nozoom }} nozoom{{ end }}"
+            srcset="{{ (.Resize "330x").RelPermalink }} 330w, {{ (.Resize "660x").RelPermalink }} 660w, {{ (.Resize "1024x").RelPermalink }} 1024w, {{ (.Resize "1320x").RelPermalink }} 2x"
+            src="{{ (.Resize "660x").RelPermalink }}"
+            alt="{{ $altText }}"
+            {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+            {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+          />
+        {{- end -}}
+      {{- else -}}
+        <img
+          class="my-0 rounded-md{{ if $nozoom }} nozoom{{ end }}"
+          src="{{ $url.String }}"
+          alt="{{ $altText }}"
+          {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+          {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
+        />
+      {{- end -}}
+    {{- end -}}
+
+    {{- if $href -}}</a>{{- end -}}
+    {{- with $caption -}}<figcaption>{{ . | markdownify }}</figcaption>{{- end -}}
+  </figure>
+{{- end -}}

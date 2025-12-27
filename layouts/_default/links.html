@@ -1,0 +1,81 @@
+{{ define "main" }}
+<article>
+  <!-- Page title -->
+  <header id="single_header" class="mt-5 max-w-prose">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Friends
+    </h1>
+  </header>
+
+  <!-- Grid + Friend cards -->
+  <style>
+    #single_header {
+      margin-bottom: 1.7rem;
+    }
+
+    .myfriends {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 1024px) {
+      .myfriends {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .friendurl {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .frienddiv {
+      display: flex;
+      align-items: flex-start;
+      padding: 0.5rem;
+      transition: background 0.2s;
+    }
+    .frienddiv:hover {
+      background: #f0f0f0;
+    }
+
+    .frienddivleft {
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    .myfriend {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      padding: 2px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+      background: #fff;
+    }
+
+    .frienddivright {
+    }
+
+    /* Name styling */
+    .friendname {
+      display: block;
+      font-size: 1.34em;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    /* Bio styling */
+    .friendword {
+      font-size: 1em;
+      font-weight: normal;
+      text-decoration: none;
+      line-height: 0.6;
+    }
+  </style>
+
+  <div class="myfriends">{{ .Content }}</div>
+</article>
+{{ end }}
