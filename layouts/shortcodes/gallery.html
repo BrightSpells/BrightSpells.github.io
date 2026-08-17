@@ -8,18 +8,23 @@
     {{ $srcAttr := index (index . 0) 0 -}}
     {{ $srcValue := index (index . 0) 1 -}}
     {{ $originalURL := $srcValue -}}
+    {{ $dimensions := "" -}}
 
     {{ if or (hasPrefix $srcValue "http://") (hasPrefix $srcValue "https://") -}}
       {{ with resources.GetRemote $srcValue -}}{{ $originalURL = .RelPermalink -}}{{ end -}}
     {{ else -}}
       {{ with $.Page.Resources.GetMatch $srcValue -}}
         {{ $originalURL = .RelPermalink -}}
+        {{ $dimensions = printf ` width="%d" height="%d"` .Width .Height -}}
       {{ else -}}
-        {{ with resources.GetMatch $srcValue -}}{{ $originalURL = .RelPermalink -}}{{ end -}}
+        {{ with resources.GetMatch $srcValue -}}
+          {{ $originalURL = .RelPermalink -}}
+          {{ $dimensions = printf ` width="%d" height="%d"` .Width .Height -}}
+        {{ end -}}
       {{ end -}}
     {{ end -}}
 
-    {{ $newAttrs := printf `src="%s" data-zoom-src="%s"` $originalURL $originalURL -}}
+    {{ $newAttrs := printf `src="%s" data-zoom-src="%s"%s` $originalURL $originalURL $dimensions -}}
     {{ $newTag := replace $imgTag $srcAttr $newAttrs -}}
     {{ $content = replace $content $imgTag $newTag -}}
   {{ end -}}

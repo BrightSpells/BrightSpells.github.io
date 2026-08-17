@@ -1,0 +1,43 @@
+<style>
+  .pixel-zoom-overlay {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.82);
+    cursor: zoom-out;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .pixel-zoom-overlay[hidden] {
+    display: none;
+  }
+
+  .pixel-zoom-image {
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+    display: block;
+    flex: none;
+    image-rendering: auto;
+    margin: 0;
+    max-height: none;
+    max-width: none;
+    object-fit: contain;
+  }
+
+  .pixel-zoom-status {
+    color: white;
+    font: 1rem/1.5 system-ui, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .pixel-zoom-overlay.is-loading .pixel-zoom-status {
+    opacity: 0.85;
+  }
+</style>
+
+{{ $imageZoom := resources.Get "js/image-zoom.js" | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+<script src="{{ $imageZoom.RelPermalink }}" integrity="{{ $imageZoom.Data.Integrity }}"></script>
