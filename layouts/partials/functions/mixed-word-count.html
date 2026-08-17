@@ -1,0 +1,7 @@
+{{- $plain := .Plain | htmlUnescape -}}
+{{- /* Count each CJK character as one 字. */ -}}
+{{- $cjk := findRE `[\p{Han}\p{Hiragana}\p{Katakana}\p{Hangul}]` $plain -}}
+{{- /* Remove CJK before counting Latin-script words and standalone numbers. */ -}}
+{{- $withoutCJK := replaceRE `[\p{Han}\p{Hiragana}\p{Katakana}\p{Hangul}]` ` ` $plain -}}
+{{- $latinWords := findRE `[\p{Latin}\p{N}]+(?:['’_-][\p{Latin}\p{N}]+)*` $withoutCJK -}}
+{{- return (add (len $cjk) (len $latinWords)) -}}

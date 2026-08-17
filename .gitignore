@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Hugo-generated output and caches
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Generated from Git history before each build
+/data/gitdates.json

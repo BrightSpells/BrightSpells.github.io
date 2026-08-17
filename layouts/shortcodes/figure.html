@@ -36,6 +36,7 @@
         class="my-0 rounded-md{{ if $nozoom }} nozoom{{ end }}"
         src="{{ $url.String }}"
         alt="{{ $altText }}"
+        {{- if not $nozoom }} data-zoom-src="{{ $url.String }}"{{- end -}}
         {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
         {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
       />
@@ -55,6 +56,7 @@
             class="my-0 rounded-md{{ if $nozoom }} nozoom{{ end }}"
             src="{{ .RelPermalink }}"
             alt="{{ $altText }}"
+            {{- if not $nozoom }} data-zoom-src="{{ .RelPermalink }}"{{- end -}}
             {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
             {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
           />
@@ -64,6 +66,7 @@
             srcset="{{ (.Resize "330x").RelPermalink }} 330w, {{ (.Resize "660x").RelPermalink }} 660w, {{ (.Resize "1024x").RelPermalink }} 1024w, {{ (.Resize "1320x").RelPermalink }} 2x"
             src="{{ (.Resize "660x").RelPermalink }}"
             alt="{{ $altText }}"
+            {{- if not $nozoom }} data-zoom-src="{{ .RelPermalink }}"{{- end -}}
             {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
             {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
           />
@@ -73,6 +76,7 @@
           class="my-0 rounded-md{{ if $nozoom }} nozoom{{ end }}"
           src="{{ $url.String }}"
           alt="{{ $altText }}"
+          {{- if not $nozoom }} data-zoom-src="{{ $url.String }}"{{- end -}}
           {{- with $wAttr }} {{ . | safeHTMLAttr }}{{- end -}}
           {{- with $hAttr }} {{ . | safeHTMLAttr }}{{- end -}}
         />

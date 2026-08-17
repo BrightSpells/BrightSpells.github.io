@@ -36,6 +36,9 @@ jobs:
           hugo-version: "latest"
           extended: true
 
+      - name: Generate publication dates from Git history
+        run: python3 scripts/generate_git_dates.py
+
       - name: Build
         run: hugo --minify
 
