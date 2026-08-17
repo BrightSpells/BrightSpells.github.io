@@ -11,8 +11,8 @@ pluralizeListTitles = "true" # hugo function useful for non-english languages, f
 enableRobotsTXT = true
 summaryLength = 30
 
-# Required for accurate per-page Git metadata. The build also generates the
-# first-commit date because Hugo's built-in GitInfo exposes only the latest one.
+# Required for accurate per-page update metadata. Publication dates continue
+# to come from each post's front matter.
 enableGitInfo = true
 
 buildDrafts = false

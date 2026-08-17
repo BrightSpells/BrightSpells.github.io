@@ -15,7 +15,6 @@
   {{ with .File }}
     {{ $gitPath := printf "%s/%s" $context.Language.Lang .Path }}
     {{ with index site.Data.gitdates $gitPath }}
-      {{ $published = time.AsTime .published }}
       {{ $updated = time.AsTime .updated }}
       {{ $commitCount = int .commitCount }}
     {{ end }}

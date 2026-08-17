@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Hugo data containing the first and latest commit for each post."""
+"""Generate Hugo data containing the latest commit for each content file."""
 
 from __future__ import annotations
 
@@ -39,7 +39,6 @@ def main() -> None:
         if not history:
             continue
         dates[path.relative_to(CONTENT).as_posix()] = {
-            "published": history[-1],
             "updated": history[0],
             "commitCount": len(history),
         }
