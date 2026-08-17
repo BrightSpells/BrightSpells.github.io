@@ -1,6 +1,6 @@
-{{ $name := .Get "name" }} <img src="/emojis/{{ $name }}.{{ with .Get "ext" }}{{
-. }}{{ else }}png{{ end }}" title="{{ with .Get "title" }}{{ . }}{{ else }}{{
-$name }}{{ end }}" alt="emoji: {{ $name }}" width="{{ with .Get "width" }}{{ .
-}}{{ else }}20{{ end }}" height="{{ with .Get "height" }}{{ . }}{{ else }}20{{
-end }}" style="vertical-align: middle; display: inline-block; line-height: 1;
-margin: 0; padding: 0;" onerror="this.src='/emojis/{{ $name }}.gif';" />
+{{- $name := .Get "name" -}}
+{{- $ext := .Get "ext" | default "png" -}}
+{{- $title := .Get "title" | default $name -}}
+{{- $width := .Get "width" | default 20 -}}
+{{- $height := .Get "height" | default 20 -}}
+<img src="/emojis/{{ $name }}.{{ $ext }}" title="{{ $title }}" alt="emoji: {{ $name }}" width="{{ $width }}" height="{{ $height }}" class="blobmoji" onerror="this.src='/emojis/{{ $name }}.gif';" />{{- "\u2060" -}}
