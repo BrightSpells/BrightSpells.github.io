@@ -19,7 +19,7 @@
       {{ end -}}
     {{ end -}}
 
-    {{ $newAttrs := printf `src="%s" data-zoom-src="%s" loading="lazy" decoding="async"` $originalURL $originalURL -}}
+    {{ $newAttrs := printf `src="%s" data-zoom-src="%s"` $originalURL $originalURL -}}
     {{ $newTag := replace $imgTag $srcAttr $newAttrs -}}
     {{ $content = replace $content $imgTag $newTag -}}
   {{ end -}}
