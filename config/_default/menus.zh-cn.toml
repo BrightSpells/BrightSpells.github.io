@@ -54,7 +54,7 @@
 
 [[main]]
   name = "Shelf"
-  pageRef = "media"
+  pageRef = "shelf"
   weight = 70
 
 [[main]]

@@ -1,0 +1,16 @@
+{{- with resources.Get "fonts/SourceHanSerifSC-Regular-subset.woff2" -}}
+  {{- $font := . | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha512") -}}
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: 'ChineseFont';
+      font-style: normal;
+      font-weight: 400;
+      src: url('{{ $font.RelPermalink }}') format('woff2');
+      unicode-range: U+2E80-2EFF, U+2F00-2FDF, U+3000-30FF, U+3100-312F,
+        U+3130-318F, U+31C0-31EF, U+3400-4DBF, U+4E00-9FFF,
+        U+F900-FAFF, U+FE10-FE1F, U+FE30-FE4F, U+FF00-FFEF,
+        U+20000-2FA1F;
+    }
+  </style>
+{{- end -}}

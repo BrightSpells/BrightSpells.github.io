@@ -12,7 +12,7 @@ from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_FONT = ROOT / "static" / "fonts" / "SourceHanSerifSC-Regular.otf"
-OUTPUT_FONT = ROOT / "static" / "fonts" / "SourceHanSerifSC-Regular-subset.woff2"
+OUTPUT_FONT = ROOT / "assets" / "fonts" / "SourceHanSerifSC-Regular-subset.woff2"
 TEXT_ROOTS = (
     ROOT / "assets",
     ROOT / "config",

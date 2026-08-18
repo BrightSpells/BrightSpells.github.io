@@ -54,7 +54,7 @@
 
 [[main]]
   name = "Shelf"
-  url = "/media/"
+  url = "/shelf/"
   weight = 70
 
 [[main]]
