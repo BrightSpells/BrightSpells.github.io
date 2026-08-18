@@ -1,0 +1,57 @@
+name: Sync NeoDB
+
+on:
+  schedule:
+    - cron: "17 17 * * 0"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: "neodb-sync"
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync NeoDB media history
+        env:
+          NEODB_TOKEN: ${{ secrets.NEODB_TOKEN }}
+        run: python3 scripts/sync_neodb.py
+
+      - name: Rebuild Chinese webfont subset
+        run: |
+          python3 -m pip install --disable-pip-version-check fonttools brotli
+          curl --fail --location --silent --show-error \
+            https://raw.githubusercontent.com/adobe-fonts/source-han-serif/release/OTF/SimplifiedChinese/SourceHanSerifSC-Regular.otf \
+            --output /tmp/SourceHanSerifSC-Regular.otf
+          python3 scripts/build_font_subset.py \
+            --font /tmp/SourceHanSerifSC-Regular.otf
+
+      - name: Commit new entries
+        id: commit
+        run: |
+          if [ -z "$(git status --porcelain -- data/neodb.json static/fonts/SourceHanSerifSC-Regular-subset.woff2)" ]; then
+            echo "NeoDB data is already current."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/neodb.json static/fonts/SourceHanSerifSC-Regular-subset.woff2
+          git commit -m "update NeoDB media log"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy updated Media page
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run hugo.yaml --ref main

@@ -1,0 +1,85 @@
+{{ define "main" }}
+  {{ $entries := site.Data.neodb.entries }}
+  <article class="media-page">
+    <section class="media-controls" aria-label="记录筛选">
+      <p class="media-intro">一些电影、电视剧、动画片、正经书的记录。全是剧透，请酌情阅读！</p>
+
+      <nav class="media-years" aria-label="按年份筛选">
+        {{ range site.Data.neodb.years }}
+          <button type="button" data-media-year="{{ . }}" aria-pressed="false">{{ . }}</button>
+        {{ end }}
+        <button type="button" data-media-year="all" aria-pressed="false">All</button>
+      </nav>
+
+      <div class="media-counts" aria-live="polite">
+        <span><strong data-media-count="series">{{ len (where $entries "type" "series") }}</strong> 剧集</span>
+        <span><strong data-media-count="film">{{ len (where $entries "type" "film") }}</strong> 电影</span>
+        <span><strong data-media-count="book">{{ len (where $entries "type" "book") }}</strong> 书籍</span>
+      </div>
+
+      {{ if site.Data.neodb.limited }}
+        <p class="media-source-note">目前显示 NeoDB 最近 20 条公开记录；连接完整档案后会自动显示全部。</p>
+      {{ end }}
+    </section>
+
+    <section class="media-list" data-media-detail-list aria-label="按年份浏览">
+      {{ range $entries }}
+        {{ if ge (int (substr .date 0 4)) (int site.Data.neodb.detail_start_year) }}
+          {{ $entry := . }}
+          <article class="media-entry" data-media-entry data-media-year="{{ substr .date 0 4 }}" data-media-type="{{ .type }}">
+            <a class="media-cover-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              {{ with .cover }}
+                <img
+                  class="media-cover nozoom"
+                  src="{{ . }}"
+                  alt="{{ $entry.title }}"
+                  width="96"
+                  height="144"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer">
+              {{ else }}
+                <span class="media-cover media-cover-placeholder" aria-hidden="true"></span>
+              {{ end }}
+            </a>
+
+            <div class="media-entry-body">
+              <div class="media-title-row">
+                <h2>
+                  <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+                </h2>
+                {{ with .score }}
+                  <span class="media-score" aria-label="评分 {{ . }} 分，共 5 分">{{ . }}/5</span>
+                {{ end }}
+              </div>
+              <time datetime="{{ .date }}">{{ time.Format "2006年1月2日" .date }}</time>
+              {{ with .comment }}
+                <p>{{ . }}</p>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      {{ else }}
+        <p>暂时还没有记录。</p>
+      {{ end }}
+      <p class="media-empty" data-media-empty hidden>这一年暂时还没有记录。</p>
+    </section>
+
+    <section class="media-archive-list" data-media-archive-list aria-label="全部记录" hidden>
+      {{ range $entries }}
+        <article class="media-archive-entry" data-media-archive-entry data-media-type="{{ .type }}">
+          <h2><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></h2>
+          {{ with .score }}
+            <span class="media-score" aria-label="评分 {{ . }} 分，共 5 分">{{ . }}/5</span>
+          {{ end }}
+          <time datetime="{{ .date }}">{{ time.Format "2006年1月2日" .date }}</time>
+        </article>
+      {{ end }}
+    </section>
+  </article>
+
+  {{ with resources.Get "js/media-filter.js" }}
+    {{ $script := . | minify | fingerprint }}
+    <script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
+{{ end }}

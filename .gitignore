@@ -9,3 +9,14 @@
 
 # Generated from Git history before each build
 /data/gitdates.json
+
+# Local Python cache files
+__pycache__/
+*.py[cod]
+
+# Local NeoDB credential (GitHub Actions uses the NEODB_TOKEN secret instead)
+/.neodb-token
+
+# Full local font sources; the site publishes only optimized WOFF2 subsets
+/static/fonts/SourceHanSerifSC-Regular.otf
+/static/fonts/SourceSerif4-Regular.ttf

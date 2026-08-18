@@ -53,6 +53,11 @@
   weight = 60
 
 [[main]]
+  name = "Shelf"
+  pageRef = "media"
+  weight = 70
+
+[[main]]
   name = "Friends"
   pageRef = "friends"
   weight = 80

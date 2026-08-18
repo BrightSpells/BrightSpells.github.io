@@ -53,6 +53,11 @@
   weight = 60
 
 [[main]]
+  name = "Shelf"
+  url = "/media/"
+  weight = 70
+
+[[main]]
   name = "中文"
   url = "/"
   weight = 80
