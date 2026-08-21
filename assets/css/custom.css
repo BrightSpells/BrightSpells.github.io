@@ -10,6 +10,28 @@ html {
   font-family: 'EnglishFont', 'ChineseFont', ui-serif, serif;
 }
 
+/* Keep navigation labels intact. Between the theme's tablet breakpoint and
+   the width needed by the full menu, use the compact mobile navigation. */
+.main-menu > div.flex-1 > nav[class~="md:flex"] a,
+.main-menu > div.flex-1 > nav:first-child a {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+  .main-menu > div.flex-1 > nav[class~="md:flex"] {
+    display: none !important;
+  }
+
+  .main-menu > div.flex-1 > div[class~="md:hidden"] {
+    display: flex !important;
+  }
+
+  .main-menu > div[class~="md:hidden"] {
+    display: block !important;
+  }
+}
+
 .nested-menu {
   display: none !important;
 }
@@ -86,7 +108,7 @@ html {
 
 .media-intro {
   color: rgb(var(--color-neutral-600));
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0 0 1rem;
 }
@@ -206,6 +228,7 @@ html {
 .media-archive-entry time {
   color: rgb(var(--color-neutral-500));
   font-size: 0.78rem;
+  grid-column: 3;
   text-align: right;
   white-space: nowrap;
 }
@@ -291,6 +314,7 @@ html {
 
 .media-entry p {
   color: rgb(var(--color-neutral-700));
+  font-size: 1rem;
   line-height: 1.7;
   margin: 0.65rem 0 0;
   white-space: pre-line;

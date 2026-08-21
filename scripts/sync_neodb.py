@@ -312,7 +312,7 @@ def api_entry(mark: dict) -> dict | None:
         "comment": clean_text(mark.get("comment_text") or ""),
         "url": item_url,
         "post_url": (
-            f"https://neodb.social/@MinskyMoment@neodb.social/posts/{post_id}/"
+            f"https://neodb.social/@MinskyMoment/posts/{post_id}/"
             if post_id else item_url
         ),
         "cover": item.get("cover_image_url") or "",

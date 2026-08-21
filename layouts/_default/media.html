@@ -67,8 +67,10 @@
 
     <section class="media-archive-list" data-media-archive-list aria-label="全部记录" hidden>
       {{ range $entries }}
+        {{ $archiveURL := .post_url | default .url }}
+        {{ $archiveURL = replace $archiveURL "@MinskyMoment@neodb.social" "@MinskyMoment" }}
         <article class="media-archive-entry" data-media-archive-entry data-media-type="{{ .type }}">
-          <h2><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></h2>
+          <h2><a href="{{ $archiveURL }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></h2>
           {{ with .score }}
             <span class="media-score" aria-label="评分 {{ . }} 分，共 5 分">{{ . }}/5</span>
           {{ end }}
