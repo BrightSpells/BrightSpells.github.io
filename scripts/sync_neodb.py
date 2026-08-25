@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Sync NeoDB ratings and comments into Hugo data.
+"""Incrementally sync NeoDB ratings and comments into Hugo data.
 
-With ``NEODB_TOKEN`` this imports the complete shelf through NeoDB's official
-API. Without a token it keeps the page useful by falling back to the latest 20
-public RSS activities.
+The committed JSON file is the durable shelf archive. A valid ``NEODB_TOKEN``
+adds new API records and updates changed records in that archive. Missing
+credentials never replace the archive with NeoDB's limited public RSS feed.
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ FEED_URL = os.environ.get(
 )
 API_URL = "https://neodb.social/api/me/shelf/complete"
 NEODB_ORIGIN = "https://neodb.social"
-TOKEN_FILE = ROOT / ".neodb-token"
+TOKEN_FILE = Path(os.environ.get("NEODB_TOKEN_FILE", ROOT / ".neodb-token"))
 NEODB_TOKEN = os.environ.get("NEODB_TOKEN", "").strip()
 if not NEODB_TOKEN and TOKEN_FILE.exists():
     NEODB_TOKEN = TOKEN_FILE.read_text(encoding="utf-8").strip()
@@ -346,6 +346,40 @@ def print_comment_history(entries: list[dict]) -> None:
         )
 
 
+def merge_entries(existing: list[dict], refreshed: list[dict]) -> list[dict]:
+    """Overlay refreshed API records on the durable local archive.
+
+    NeoDB GUIDs are stable across edits, so changed dates, ratings, comments,
+    titles, covers, and links replace their cached values. Records absent from
+    a response remain in the archive; this prevents a limited or incomplete
+    response from shrinking the public shelf.
+    """
+    merged: dict[str, dict] = {}
+    unkeyed: list[dict] = []
+
+    for entry in existing:
+        guid = str(entry.get("guid") or "")
+        if guid:
+            merged[guid] = dict(entry)
+        else:
+            unkeyed.append(dict(entry))
+
+    for entry in refreshed:
+        guid = str(entry.get("guid") or "")
+        if not guid:
+            unkeyed.append(dict(entry))
+            continue
+        cached = merged.get(guid, {})
+        updated = {**cached, **entry}
+        # A temporarily missing cover should not discard a working cached one.
+        if cached.get("cover") and not entry.get("cover"):
+            updated["cover"] = cached["cover"]
+        merged[guid] = updated
+
+    entries = [*merged.values(), *unkeyed]
+    return sorted(entries, key=lambda entry: entry.get("timestamp", ""), reverse=True)
+
+
 def sync_api_entries() -> list[dict]:
     headers = {
         "Authorization": f"Bearer {NEODB_TOKEN}",
@@ -364,9 +398,11 @@ def sync_api_entries() -> list[dict]:
         pages = int(payload.get("pages", 1))
         page += 1
 
+    existing_data = load_existing()
+    existing_list = existing_data.get("entries", [])
     existing_entries = {
         entry["guid"]: entry
-        for entry in load_existing().get("entries", [])
+        for entry in existing_list
         if entry.get("guid")
     }
     entries = [entry for mark in marks if (entry := api_entry(mark))]
@@ -424,7 +460,11 @@ def sync_api_entries() -> list[dict]:
     if START_DATE:
         datetime.strptime(START_DATE, "%Y-%m-%d")
         entries = [entry for entry in entries if entry["date"] >= START_DATE]
-    return sorted(entries, key=lambda entry: entry.get("timestamp", ""), reverse=True)
+        existing_list = [
+            entry for entry in existing_list
+            if entry.get("date", "") >= START_DATE
+        ]
+    return merge_entries(existing_list, entries)
 
 
 def sync_rss_entries() -> list[dict]:
@@ -490,9 +530,17 @@ def build_output(entries: list[dict], source_mode: str) -> dict:
 
 
 def main() -> int:
-    source_mode = "api" if NEODB_TOKEN else "rss"
-    entries = sync_api_entries() if NEODB_TOKEN else sync_rss_entries()
-    output = build_output(entries, source_mode)
+    if not NEODB_TOKEN:
+        existing_count = len(load_existing().get("entries", []))
+        print(
+            "error: NEODB_TOKEN is required; "
+            f"left the existing {existing_count}-entry archive untouched",
+            file=sys.stderr,
+        )
+        return 1
+
+    entries = sync_api_entries()
+    output = build_output(entries, "api")
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     rendered = json.dumps(output, ensure_ascii=False, indent=2) + "\n"
     if not DATA_FILE.exists() or DATA_FILE.read_text(encoding="utf-8") != rendered:

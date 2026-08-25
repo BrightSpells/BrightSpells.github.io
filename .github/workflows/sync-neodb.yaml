@@ -21,6 +21,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Require NeoDB API token
+        env:
+          NEODB_TOKEN: ${{ secrets.NEODB_TOKEN }}
+        run: |
+          if [ -z "$NEODB_TOKEN" ]; then
+            echo "::error::NEODB_TOKEN repository secret is missing or empty; the shelf archive was not changed."
+            exit 1
+          fi
+
       - name: Sync NeoDB media history
         env:
           NEODB_TOKEN: ${{ secrets.NEODB_TOKEN }}
