@@ -25,7 +25,11 @@
     {{ end -}}
 
     {{ $newAttrs := printf `src="%s" data-zoom-src="%s"%s` $originalURL $originalURL $dimensions -}}
-    {{ $newTag := replace $imgTag $srcAttr $newAttrs -}}
+    {{ $newTag := $imgTag -}}
+    {{ if not (findRE `\salt=` $newTag) -}}
+      {{ $newTag = replace $newTag "<img" `<img alt=""` -}}
+    {{ end -}}
+    {{ $newTag = replace $newTag $srcAttr $newAttrs -}}
     {{ $content = replace $content $imgTag $newTag -}}
   {{ end -}}
 {{ end -}}
