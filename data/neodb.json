@@ -682,6 +682,26 @@
       "title_metadata_version": 2
     },
     {
+      "id": "3pzmdXn8JRf4xIulfvb9Ef",
+      "guid": "neodb:3pzmdXn8JRf4xIulfvb9Ef",
+      "type": "film",
+      "title": "F1 The Movie (F1：狂飙飞车)",
+      "score": 4,
+      "date": "2025-12-19",
+      "timestamp": "2025-12-20T03:51:00+00:00",
+      "comment": "7.3.2025 第一次看\n那一秒值不值得，当年哭得没看完的一把青还在纠缠着我。音乐配这个画面真的好好看啊，十分想开始看f1了\n------\n12.19.2025 重温\n看了半年f1比赛之后重新再看，果然最爱看的还是在赛道上的场景。这次再看里面现实中的车手也都熟悉了，在电影里看到了rookie season的Oscar piastri和他的first podium，本Oscar厨十分开心！剧情真的非常扯啊，不拍qualifying只拍正赛十分confusing，比赛的顺序也非常随意，最后一站red flag之前max领先，结果重新发车max就失踪了，也就是第一次看的时候谁都不知道，否则真的满头问号啊。但是这个电影真的成功把我带进来f1大坑里，赛季没结束的时候有比赛直播甚至会早上六点起来看比赛，现在做杂事的背景音都是没看过的f1比赛了，我是真没想到会发生这样的事！",
+      "url": "https://neodb.social/movie/3pzmdXn8JRf4xIulfvb9Ef",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/463746179911497080/",
+      "cover": "https://neodb.social/m/item/movie/2026/02/14/67fa96f0-1daf-4bd0-b358-ac7755b73d74.jpeg",
+      "category": "movie",
+      "original_title": "F1 The Movie",
+      "chinese_title": "F1：狂飙飞车",
+      "languages": [
+        "en"
+      ],
+      "title_metadata_version": 2
+    },
+    {
       "id": "3c1kyDKUvemvvxWRAKVAt6",
       "guid": "neodb:3c1kyDKUvemvvxWRAKVAt6",
       "type": "film",
@@ -1135,26 +1155,6 @@
       "languages": [
         "en",
         "tr"
-      ],
-      "title_metadata_version": 2
-    },
-    {
-      "id": "3pzmdXn8JRf4xIulfvb9Ef",
-      "guid": "neodb:3pzmdXn8JRf4xIulfvb9Ef",
-      "type": "film",
-      "title": "F1 The Movie (F1：狂飙飞车)",
-      "score": 4,
-      "date": "2025-07-03",
-      "timestamp": "2025-07-03T23:41:45.189000+00:00",
-      "comment": "7.3.2025 第一次看\n那一秒值不值得，当年哭得没看完的一把青还在纠缠着我。音乐配这个画面真的好好看啊，十分想开始看f1了\n------\n12.19.2025 重温\n看了半年f1比赛之后重新再看，果然最爱看的还是在赛道上的场景。这次再看里面现实中的车手也都熟悉了，在电影里看到了rookie season的Oscar piastri和他的first podium，本Oscar厨十分开心！剧情真的非常扯啊，不拍qualifying只拍正赛十分confusing，比赛的顺序也非常随意，最后一站red flag之前max领先，结果重新发车max就失踪了，也就是第一次看的时候谁都不知道，否则真的满头问号啊。但是这个电影真的成功把我带进来f1大坑里，赛季没结束的时候有比赛直播甚至会早上六点起来看比赛，现在做杂事的背景音都是没看过的f1比赛了，我是真没想到会发生这样的事！",
-      "url": "https://neodb.social/movie/3pzmdXn8JRf4xIulfvb9Ef",
-      "post_url": "https://neodb.social/@MinskyMoment/posts/463746179911497080/",
-      "cover": "https://neodb.social/m/item/movie/2026/02/14/67fa96f0-1daf-4bd0-b358-ac7755b73d74.jpeg",
-      "category": "movie",
-      "original_title": "F1 The Movie",
-      "chinese_title": "F1：狂飙飞车",
-      "languages": [
-        "en"
       ],
       "title_metadata_version": 2
     },
