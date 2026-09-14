@@ -4,7 +4,7 @@
   "limited": false,
   "start_date": null,
   "counts": {
-    "series": 244,
+    "series": 245,
     "film": 222,
     "book": 28,
     "game": 0
@@ -932,6 +932,26 @@
       "category": "tv",
       "original_title": "The Legend of Luo Xiaohei (The Legend of LUOXIAOHEI)",
       "chinese_title": "罗小黑战记",
+      "languages": [
+        "汉语普通话"
+      ],
+      "title_metadata_version": 2
+    },
+    {
+      "id": "2q0oe60LBoYwkLbtUMjTOW",
+      "guid": "neodb:2q0oe60LBoYwkLbtUMjTOW",
+      "type": "series",
+      "title": "The Legend of Luo Xiaohei Season 1 (第 1 季)",
+      "score": 4,
+      "date": "2025-08-18",
+      "timestamp": "2025-08-19T00:25:21.751000+00:00",
+      "comment": "好萌啊，原来比丢是罗小黑战记里的啊！人类小孩对于妖精真的接受良好呢！非常喜欢老府，小白说还是个东北虎那里想起来一次笑一次！",
+      "url": "https://neodb.social/tv/season/2q0oe60LBoYwkLbtUMjTOW",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/480426996338010872/",
+      "cover": "https://neodb.social/m/item/tmdb_tvseason/2026/06/25/21b460a8-251c-4fe8-afb7-3073fc1943f0.jpg",
+      "category": "tv",
+      "original_title": "The Legend of Luo Xiaohei Season 1",
+      "chinese_title": "第 1 季",
       "languages": [
         "汉语普通话"
       ],
@@ -8800,7 +8820,7 @@
       "comment": "曹云！曹云！我吹林青霞呜呜呜呜呜qwq",
       "url": "https://neodb.social/movie/6s19plv93Yg6BkqIQsqqgH",
       "post_url": "https://neodb.social/@MinskyMoment/posts/256650187143348816/",
-      "cover": "https://neodb.social/m/item/movie/2024/05/15/a177ce31-9271-40bc-9acf-7b04bee9c155.webp",
+      "cover": "https://neodb.social/m/item/movie/2026/09/12/54e49e04-4d21-4642-a628-4cf124b5d253.webp",
       "category": "movie",
       "original_title": "刀馬旦",
       "chinese_title": "刀马旦",
