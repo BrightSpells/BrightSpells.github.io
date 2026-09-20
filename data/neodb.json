@@ -4,7 +4,7 @@
   "limited": false,
   "start_date": null,
   "counts": {
-    "series": 245,
+    "series": 246,
     "film": 222,
     "book": 28,
     "game": 0
@@ -25,6 +25,26 @@
   ],
   "detail_start_year": 2023,
   "entries": [
+    {
+      "id": "0MHgDUYNXQ2JQ9zRJnr9PI",
+      "guid": "neodb:0MHgDUYNXQ2JQ9zRJnr9PI",
+      "type": "series",
+      "title": "Only Murders in the Building Season 5 (大楼里只有谋杀)",
+      "score": 3.5,
+      "date": "2026-09-16",
+      "timestamp": "2026-09-17T00:14:40.920000+00:00",
+      "comment": "不太爱看这一季，可能是因为感觉Camila Loretta the 都很夸张，因为不爱看这种人物，就也不咋爱看剧了。中间感觉3-8集都有点无聊，最后两集才又好一点，也因为不太爱看，中间停了好长时间，甚至看到Lorraine都没反应过来这是谁。因为看了madam secretary，再看到她演mob wife总感觉有些出戏。虽然看的时候感觉有点无聊，看完了又舍不得了，开始看第六集什么时候出，这真是！",
+      "url": "https://neodb.social/tv/season/0MHgDUYNXQ2JQ9zRJnr9PI",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/623205127715760912/",
+      "cover": "https://neodb.social/m/item/tv/2025/09/09/39049f68-8f7e-4157-a5f9-f0bd82d1e6bb.png",
+      "category": "tv",
+      "original_title": "Only Murders in the Building Season 5",
+      "chinese_title": "大楼里只有谋杀",
+      "languages": [
+        "en"
+      ],
+      "title_metadata_version": 2
+    },
     {
       "id": "2ZNe9TXpqpsFATh0HW7SkU",
       "guid": "neodb:2ZNe9TXpqpsFATh0HW7SkU",
