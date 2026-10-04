@@ -5,7 +5,7 @@
   "start_date": null,
   "counts": {
     "series": 246,
-    "film": 222,
+    "film": 224,
     "book": 28,
     "game": 0
   },
@@ -25,6 +25,52 @@
   ],
   "detail_start_year": 2023,
   "entries": [
+    {
+      "id": "3wHs2RdLdMJikVrQtqKH39",
+      "guid": "neodb:3wHs2RdLdMJikVrQtqKH39",
+      "type": "film",
+      "title": "Cars 2 (赛车总动员2)",
+      "score": 4.5,
+      "date": "2026-10-02",
+      "timestamp": "2026-10-03T01:47:23.937000+00:00",
+      "comment": "我以为会是一个赛车故事，结果点开简介看到espionage就觉得不对，没想到最后真的看了一部007……但还是挺好看的！上一部苍蝇还是长着翅膀的小小车，这一部变成小飞机了！Porto Corsa赛道那个hairpin真的好像Monaco啊，看见了还恍惚了一下想起来设定是意大利。Francesco在意大利比赛之前和McQueen说的小垃圾话真的好好玩，非常喜欢。我以为lewis hamilton也会是open wheel，没想到竟然不是，第一次见到McQueen说的那句hey man真的太本人了笑得！特别喜欢结尾的collision of worlds，好听！",
+      "url": "https://neodb.social/movie/3wHs2RdLdMJikVrQtqKH39",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/629026666628926288/",
+      "cover": "https://neodb.social/m/movie/2021/09/151982083c-63bf-40f9-a106-2e71aab5eaf5.jpg",
+      "category": "movie",
+      "original_title": "Cars 2",
+      "chinese_title": "赛车总动员2",
+      "languages": [
+        "en",
+        "ja",
+        "it",
+        "fr"
+      ],
+      "title_metadata_version": 2
+    },
+    {
+      "id": "36NyBeKSoOIpi0XdOx7LtN",
+      "guid": "neodb:36NyBeKSoOIpi0XdOx7LtN",
+      "type": "film",
+      "title": "Cars (赛车总动员)",
+      "score": 5,
+      "date": "2026-09-30",
+      "timestamp": "2026-10-01T02:51:28.891000+00:00",
+      "comment": "看了f1之后看那么多车手都喜欢cars来看一看，好看啊，看到后面嗷嗷哭啊！不过看了那么多比赛之后还是觉得车手都是想赢的吧，放弃冠军真的很遗憾啊！不过McQueen推着the king过线的时候好像以前f1比赛结束车没油了车手坐在别的赛车车辕上被带回去。看doc换上比赛轮胎在土路上一骑绝尘真是宁移白首之心，McQueen在赛场的草上用上了从doc那里学来的技巧也是很完整的传承，毕竟上了草上可能就出不来了，想想piastri 25年Australian GP在草地上倒车一分钟！里面的车都画得好好看啊，尤其是sally，上网搜了一下原车，太优美了！McQueen和sally从镇上开到wheel well那段真的好漂亮啊，边看边点头嗯嗯嗯grand canyon，但是瀑布出现的时候真是眼前一亮啊！我天红色岩石中间一到瀑布，真的太好看了！上网搜发现是在reservation里的havasu falls，以后一定要去啊！",
+      "url": "https://neodb.social/movie/36NyBeKSoOIpi0XdOx7LtN",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/628318017734099240/",
+      "cover": "https://neodb.social/m/movie/2021/09/142a2b454c-6af7-4fe0-a091-66207e4e0dea.jpg",
+      "category": "movie",
+      "original_title": "Cars",
+      "chinese_title": "赛车总动员",
+      "languages": [
+        "en",
+        "it",
+        "ja",
+        "依地语"
+      ],
+      "title_metadata_version": 2
+    },
     {
       "id": "0MHgDUYNXQ2JQ9zRJnr9PI",
       "guid": "neodb:0MHgDUYNXQ2JQ9zRJnr9PI",
