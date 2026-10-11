@@ -5,7 +5,7 @@
   "start_date": null,
   "counts": {
     "series": 246,
-    "film": 224,
+    "film": 227,
     "book": 28,
     "game": 0
   },
@@ -25,6 +25,66 @@
   ],
   "detail_start_year": 2023,
   "entries": [
+    {
+      "id": "5i7tnLAFlMioLebnmISf5X",
+      "guid": "neodb:5i7tnLAFlMioLebnmISf5X",
+      "type": "film",
+      "title": "Cars 3 (赛车总动员3：极速挑战)",
+      "score": 5,
+      "date": "2026-10-10",
+      "timestamp": "2026-10-11T03:57:57.391000+00:00",
+      "comment": "好喜欢啊，感觉和第一部一样好看！看到后面真的嗷嗷哭啊，smokey 和 McQueen 说 racing wasn't the best part of hud's life. you were. 的时候，我嗷就哭了！最后的照片 doc 看 McQueen 的表情和 McQueen 看 cruz 的表情真的一模一样啊，就像是 Schumacher 看 Vettel 的表情一样！（怎么代上了！！）\nMcQueen 和 cruz 听那群退役的 racer 讲古的那段好喜欢。Louise Nash 要自己偷一个号码牌去比赛，后面 cruz 有 McQueen 和其他 racer 的支持，对比之下好感动啊！cruz 说自己也想 race 也想赢，错过了一次机会就做不了 racer 了。但是她还在做 trainer，不知道是不是想继续离这项运动近一点。看的时候也感觉这个剧情一直在暗示 cruz 还能 race，但是我以为会发生的早一点。McQueen 带着 cruz 去沙滩的时候我就想，这谁 train 谁啊！在 thomasville cruz 最后一天超了 McQueen 的时候我以为 McQueen 会恍然大悟让 cruz 去比赛，没想到竟然是比赛中途换车，还能这样！但还是非常开心她结尾又有了 race 的机会，还抓住了机会！\nThunder Hollow 那里接怎么想到要去 thomasville 那里有点生硬啊，但是真的太呼应了，岁数大了就不全是靠速度而是靠经验了，尤其喜欢 smokey 说 McQueen 在 Thunder Hollow 甚至没有一丝划痕！全片最喜欢的就是 McQueen 对着 cruz 唱跳俱佳地 I'm sorry. I'm sorry. I'm sorry that I yelled. 笑死我了！上 YouTube 找了片段循环播放！！",
+      "url": "https://neodb.social/movie/5i7tnLAFlMioLebnmISf5X",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/631958625293670312/",
+      "cover": "https://neodb.social/m/movie/2021/09/1626268cec-3d2d-4dfd-9f6c-ac6d5bd41a0c.jpg",
+      "category": "movie",
+      "original_title": "Cars 3",
+      "chinese_title": "赛车总动员3：极速挑战",
+      "languages": [
+        "en"
+      ],
+      "title_metadata_version": 2
+    },
+    {
+      "id": "4eyra18fUv0GMGsG3dBJcT",
+      "guid": "neodb:4eyra18fUv0GMGsG3dBJcT",
+      "type": "film",
+      "title": "北極百貨店のコンシェルジュさん (北极百货店的接待员)",
+      "score": 3,
+      "date": "2026-10-08",
+      "timestamp": "2026-10-09T01:28:01.220000+00:00",
+      "comment": "挺萌的，好久没在有弹幕的时候看动画片了，对着弹幕笑得不行。看到最后弹幕说自己开始哭了，我想真的吗我咋没感觉，然后没多久我也开始嗷嗷哭！一时不知道是真的我开始想哭了还是看弹幕哭了我受到了感染！海貂父女很萌啊，虽然感觉秋乃干得太多了，有些时候顺其自然一点也挺好的。ceo出场的时候都很搞笑啊，在地板上滑行，不会飞结果硬是跳了，那段使劲儿扑棱翅膀实在是太搞笑了！\n秋乃感觉一直在道歉啊，看得好难受。也挺不理解为啥秋乃都被说我们百货店不需要你，结果秋乃还在坚持上班。说秋乃过分善良那段看得也很难受，你们百货店不培训吗，就知道贬低人。唉，动物们的部分看得心情很好，职场的部分看得心情很糟糕（越想职场的部分越糟心，减掉一颗星……",
+      "url": "https://neodb.social/movie/4eyra18fUv0GMGsG3dBJcT",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/631196116919434368/",
+      "cover": "https://neodb.social/m/item/doubanmovie/2023/09/05/628ecc71-c8ff-4b31-bac2-8f5251ecfca6.jpg",
+      "category": "movie",
+      "original_title": "北極百貨店のコンシェルジュさん",
+      "chinese_title": "北极百货店的接待员",
+      "languages": [
+        "ja"
+      ],
+      "title_metadata_version": 2
+    },
+    {
+      "id": "1VntKpkLuN9bCMUQPHPoef",
+      "guid": "neodb:1VntKpkLuN9bCMUQPHPoef",
+      "type": "film",
+      "title": "Vettel: More Than A Champion",
+      "score": 5,
+      "date": "2026-10-06",
+      "timestamp": "2026-10-07T00:28:25.764000+00:00",
+      "comment": "我真是看了太多Vettel剪辑和小视频了，里面的名场面竟然全都见过。Vettel确实是一个很情绪化并且冲动的人啊，但是赛场上搞成什么样场下竟然都能再和好甚至变得亲密。看到最后不出意外又开始嗷嗷哭，唉！还是很喜欢Vettel！",
+      "url": "https://neodb.social/movie/1VntKpkLuN9bCMUQPHPoef",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/630456344689986192/",
+      "cover": "https://neodb.social/m/item/doubanmovie/2023/06/12/e7cf7a00-7470-49fb-927b-a003ff7122e7.jpg",
+      "category": "movie",
+      "original_title": "Vettel: More Than A Champion",
+      "chinese_title": "",
+      "languages": [
+        "en"
+      ],
+      "title_metadata_version": 2
+    },
     {
       "id": "3wHs2RdLdMJikVrQtqKH39",
       "guid": "neodb:3wHs2RdLdMJikVrQtqKH39",
