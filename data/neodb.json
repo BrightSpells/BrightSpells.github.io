@@ -4,7 +4,7 @@
   "limited": false,
   "start_date": null,
   "counts": {
-    "series": 246,
+    "series": 247,
     "film": 227,
     "book": 28,
     "game": 0
@@ -25,6 +25,26 @@
   ],
   "detail_start_year": 2023,
   "entries": [
+    {
+      "id": "3mOalXR4pCsSVMZBGYYTLc",
+      "guid": "neodb:3mOalXR4pCsSVMZBGYYTLc",
+      "type": "series",
+      "title": "Slow Horses Season 6 (第 6 季)",
+      "score": 5,
+      "date": "2026-10-22",
+      "timestamp": "2026-10-22T18:16:25.203000+00:00",
+      "comment": "我靠，一个一个一个死了，怎么这样！最后lamb和Diana两个人借力打力攒一个新阴谋出来那里还挺好看的。很喜欢lamb和harkness两个人在shake shack里的那一段，也特别喜欢最后一集river滚下楼梯，harkness依旧坐着喝酒，但是看见后面还有个杀手抬手就给人杀了那段。感觉还是上一辈的人做事比较好看啊！lamb在车里接river的电话听到coe的死讯那里演得太好了，说sid昏迷的时候都比river强好好笑。river这季依旧很难评啊，上一季lamb在酒吧里锐评river：Look what I’ve got to work with! A crack-up, a drunk, a psychopath, whatever that is. All of them more functional than you! 这一季依旧适用！不过感觉毕竟和爷爷这么漫长的告别确实也难免的吧！最后结尾river究竟是从哪儿中的毒啊，撬棍吗？不会sid这里还能接着反转吧！看完我只会说我靠了，连着说了能有十多分钟！",
+      "url": "https://neodb.social/tv/season/3mOalXR4pCsSVMZBGYYTLc",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/636160931265253744/",
+      "cover": "https://neodb.social/m/item/fedi/2026/08/28/f150bdb5-da9c-48d4-b62d-dba864fbb020.jpg",
+      "category": "tv",
+      "original_title": "Slow Horses Season 6",
+      "chinese_title": "第 6 季",
+      "languages": [
+        "en"
+      ],
+      "title_metadata_version": 2
+    },
     {
       "id": "5i7tnLAFlMioLebnmISf5X",
       "guid": "neodb:5i7tnLAFlMioLebnmISf5X",
