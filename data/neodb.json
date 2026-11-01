@@ -5,7 +5,7 @@
   "start_date": null,
   "counts": {
     "series": 247,
-    "film": 227,
+    "film": 228,
     "book": 28,
     "game": 0
   },
@@ -1918,6 +1918,26 @@
       "category": "movie",
       "original_title": "Fly Me to the Moon",
       "chinese_title": "登月大计划",
+      "languages": [
+        "en"
+      ],
+      "title_metadata_version": 2
+    },
+    {
+      "id": "75kZHPOXHhwjBVr1KcCqpU",
+      "guid": "neodb:75kZHPOXHhwjBVr1KcCqpU",
+      "type": "film",
+      "title": "Fly Me to the Moon (阿尔忒弥斯计划)",
+      "score": 3.5,
+      "date": "2025-01-04",
+      "timestamp": "2025-01-05T02:20:23.660000+00:00",
+      "comment": "第一顿饭看了一半，然后隔了好几天看了后半段，普普通通一个甚至不能让我有动力一次看完的片子，后半段还挺好看的。kelly在机场掏出来people of apollo那个画册的时候，我嗷地就开始哭！尤其是当时kelly为moe做的事可以说是对不起整个Apollo计划的所有人了，随着她翻页我是感觉到了那种美好的回忆和愧疚夹击下的感觉。非常非常喜欢火箭发射的场景，感觉这种场景看多少遍我都很喜欢，所有人为了同一个项目努力，最后成功了的时候真诚地鼓掌互相握手或者拥抱庆祝。可能因为我真的很少真诚地鼓掌，我缺啥补啥啊这是！最后转播那里也挺好笑的！Cole 和Moe 两个人都觉得月球转播画面好假，一个人在中控室自我怀疑，另一个人在录影棚看着和现场被猫闹的一团乱的转播画面感慨，真是太好笑了！Ruby 和Kelly 说这就是给Nixon 工作的下场那里也笑死！",
+      "url": "https://neodb.social/movie/75kZHPOXHhwjBVr1KcCqpU",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/398556287440410616/",
+      "cover": "https://neodb.social/m/movie/2022/04/24bd851832-66c0-4943-b5e2-2c0077341983.png",
+      "category": "movie",
+      "original_title": "Fly Me to the Moon",
+      "chinese_title": "阿尔忒弥斯计划",
       "languages": [
         "en"
       ],
@@ -5399,7 +5419,7 @@
       "comment": "有些蛮好笑的，有些能看出来是事后写的小段子。",
       "url": "https://neodb.social/book/6mzTJZ7typ5mHO8LqkkWzK",
       "post_url": "https://neodb.social/@MinskyMoment/posts/256295110172825104/",
-      "cover": "https://neodb.social/m/book/2021/12/06ac4a0884-5537-4d30-8195-b27bda63e811.jpg",
+      "cover": "https://neodb.social/m/item/book/2026/10/29/af1cd833-d501-4f7f-9427-15127a850b85.jpg",
       "category": "book",
       "original_title": "文革笑料集",
       "chinese_title": "文革笑料集",
