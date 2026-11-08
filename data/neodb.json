@@ -5,7 +5,7 @@
   "start_date": null,
   "counts": {
     "series": 247,
-    "film": 228,
+    "film": 229,
     "book": 28,
     "game": 0
   },
@@ -25,6 +25,26 @@
   ],
   "detail_start_year": 2023,
   "entries": [
+    {
+      "id": "4sR6K7KATcvBAntFHHFFIR",
+      "guid": "neodb:4sR6K7KATcvBAntFHHFFIR",
+      "type": "film",
+      "title": "Wish (星愿)",
+      "score": 4,
+      "date": "2026-11-05",
+      "timestamp": "2026-11-06T02:52:21.131000+00:00",
+      "comment": "一堆电视剧开了头之后都没什么看的欲望了，决定来点动画片，因为对动画片接受范围十分广。这个好萌啊，对着星星许愿，星星笑眯眯地就来了，好萌啊星星！怎么也没想到看着看着开始法国大革命了！国民从dahlia提出了第一个疑问之后到见到了国王的恐怖再到最后齐心产生了新愿望，还是感动了一下。以及小国家真小啊，荒郊野岭回到市中心就是国王说两句话的功夫。爷爷百岁老人啊又划船又唱跳，这谁能想到，希望我老了也能如此体力充沛，一百了还能追求新愿望。",
+      "url": "https://neodb.social/movie/4sR6K7KATcvBAntFHHFFIR",
+      "post_url": "https://neodb.social/@MinskyMoment/posts/641364199995727312/",
+      "cover": "https://neodb.social/m/item/doubanmovie/2023/10/09/f20dd991-cd35-4a5a-8461-f032ba39ff6f.jpg",
+      "category": "movie",
+      "original_title": "Wish",
+      "chinese_title": "星愿",
+      "languages": [
+        "en"
+      ],
+      "title_metadata_version": 2
+    },
     {
       "id": "3mOalXR4pCsSVMZBGYYTLc",
       "guid": "neodb:3mOalXR4pCsSVMZBGYYTLc",
